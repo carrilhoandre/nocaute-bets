@@ -18,6 +18,7 @@ namespace NocauteBets.Domain.Models
         public string ImageUrl { get; private set; }
         public string Cartel { get; private set; }
         public string Category { get; private set; }
+        public string? Country { get; private set; }
 
         public void SetNickname(string newNickname)
         {
@@ -28,6 +29,10 @@ namespace NocauteBets.Domain.Models
         {
             Cartel = newCartel;
         }
-        //public FighterCategory Category { get; private set; }
+
+        public void SetCountry(string newCountry)
+        {
+            Country = newCountry;
+        }
     }
 }
