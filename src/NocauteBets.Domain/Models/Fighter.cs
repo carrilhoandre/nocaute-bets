@@ -19,6 +19,7 @@ namespace NocauteBets.Domain.Models
         public string Cartel { get; private set; }
         public string Category { get; private set; }
         public string? Country { get; private set; }
+        public FighterStatistics? Statistics { get; private set;}
 
         public void SetNickname(string newNickname)
         {
